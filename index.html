@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dist/style.css">
+</head>
+<body>
+    <div class="exercise1">
+        <div class="exercise1_title">
+            Enter your name (name can't contain digits)
+        </div>
+        <input type="text" class="input" onkeypress="noDigits(event)">
+    </div>
+
+    <div class="exercise2">
+        <button class="exercise2__button" onclick="clickOnBtn()">Open modal</button>
+        <div class="exercise2__modal" id="modal">
+            <div class="exercise2__modal-title">Hello from Modal Window!</div>
+            <button class="exercise2__modal-button" onclick="clickOnCloseBtn()">Close</button>
+        </div>
+    </div>
+
+    <div class="exercise3">
+        <img src="images/footfield.jpg" alt="">
+        <div class="exercise3__container">
+            <div class="ball" id="ball">
+                <img src="images/ball.png" alt="">
+            </div>
+        </div>
+        
+    </div>
+    
+    <div class="exercise4">
+        <div class="exercise4__trafficLighter">
+            <div class="exercise4__trafficLighter-light">
+                <div class="light1 active"></div>
+            </div>
+            <div class="exercise4__trafficLighter-light">
+                <div class="light2"></div>
+            </div>
+            <div class="exercise4__trafficLighter-light">
+                <div class="light3"></div>
+            </div>
+        </div>
+        <button class="exercise4__button">NEXT</button>
+    </div>
+
+    <div class="exercise5">
+        <ol class="exercise5__list">
+            <li class="exercise5__list-item item1">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus neque vel blanditiis.
+            </li>
+            <li class="exercise5__list-item item2">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia, asperiores.
+            </li>
+            <li class="exercise5__list-item item3">
+                Lorem ipsum dolor sit amet, consectetur adipisicing.
+            </li>
+            <li class="exercise5__list-item item4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo enim alias itaque iusto voluptatibus qui sunt!
+            </li>
+            <li class="exercise5__list-item item5">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo quos deleniti itaque vitae.
+            </li>
+            <li class="exercise5__list-item item6">
+                Lorem ipsum dolor sit amet consectetur adipisicing.
+            </li>
+            <li class="exercise5__list-item item7">
+                Lorem ipsum dolor sit amet consectetur.
+            </li>
+        </ol>
+    </div>
+
+    <div class="exercise6">
+        <div class="exercise6__block">
+            <div class="btn_1">
+                <div class="exercise6__tool tool61">Tool tip 1</div>
+                <button class="btn61">Button 1</button>
+            </div>
+        </div>
+        <div class="exercise6__block">
+            <div class="btn_2">
+                <div class="exercise6__tool tool62">Tool tip 2</div>
+                <button class="btn62">Button 2</button>
+            </div>
+        </div>
+        <div class="exercise6__block">
+            <div class="btn_3">
+                <div class="exercise6__tool tool63">Tool tip 3</div>
+                <button class="btn63">Button 3</button>
+            </div>
+        </div>
+        <div class="exercise6__block">
+            <div class="btn_4">
+                <div class="exercise6__tool tool64">Tool tip 4</div>
+                <button class="btn64">Button 4</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
