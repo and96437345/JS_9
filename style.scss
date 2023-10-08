@@ -199,3 +199,45 @@
         }
     }
 }
+
+.exercise7 {
+    font-size: 25px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    &__list {
+        display: none;
+        &-title:hover {
+            font-weight: 700;
+        }
+        &-item__title:hover {
+                font-weight: 700;
+        }
+        margin-top: 0;
+        &-item__list {
+            display: none;
+        }
+        &-item__list-folders:hover {
+            font-weight: 700;
+        }
+    }
+    .activeFolder {
+        display: block;
+    }
+    .activeSubFolder {
+         display: block;
+    }
+}
+
+.exercise8 {
+    border: 1px solid;
+    font-size: 25px;
+    margin-bottom: 150px;
+    margin-left: 50px;
+    padding: 20px;
+}
+
+.title {
+    font-size: 25px;
+    margin: 20px auto;
+    font-weight: 600;
+}

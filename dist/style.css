@@ -196,3 +196,45 @@
   margin-right: auto;
   margin-left: auto;
 }
+
+.exercise7 {
+  font-size: 25px;
+  margin-bottom: 50px;
+  margin-left: 50px;
+}
+.exercise7__list {
+  display: none;
+  margin-top: 0;
+}
+.exercise7__list-title:hover {
+  font-weight: 700;
+}
+.exercise7__list-item__title:hover {
+  font-weight: 700;
+}
+.exercise7__list-item__list {
+  display: none;
+}
+.exercise7__list-item__list-folders:hover {
+  font-weight: 700;
+}
+.exercise7 .activeFolder {
+  display: block;
+}
+.exercise7 .activeSubFolder {
+  display: block;
+}
+
+.exercise8 {
+  border: 1px solid;
+  font-size: 25px;
+  margin-bottom: 150px;
+  margin-left: 50px;
+  padding: 20px;
+}
+
+.title {
+  font-size: 25px;
+  margin: 20px auto;
+  font-weight: 600;
+}

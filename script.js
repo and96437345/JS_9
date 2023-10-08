@@ -8,6 +8,8 @@ function noDigits(event) {
       event.preventDefault();
 }
 
+
+
 // Задание 2
 // Создать html-страницу с кнопкой Открыть и модальным
 // окном. На модальном окне должен быть текст и кнопка Закрыть.
@@ -23,6 +25,8 @@ const btnClose = document.querySelector(".exercise2__modal-button");
 const clickOnCloseBtn = function(){
     document.getElementById("modal").style.display = `none`;
 }
+
+
 
 // Задание 3
 // Создать html-страницу с футбольным полем, которое занимает всю ширину и высоту экрана, и мячом размером 100 на 100
@@ -48,52 +52,37 @@ $(".exercise3__container").click(function(e) {
     document.getElementById("ball").style.top = `${positionY}px`;
 });
 
+
+
 // Задание 4
 // Создать html-страницу со светофором и кнопкой, которая
 // переключает светофор на следующий цвет.
 
-// const btn4 = document.querySelector(".exercise4__button");
-// const red = document.getElementsByClassName('light1');
-// const yellow = document.getElementsByClassName('light2');
-// const green = document.getElementsByClassName('light3');
-// const btn4 = document.querySelector('.exercise4__button')
-
-// btn4.addEventListener('click', function (event) {
-//   console.log('Произошло событие', event.type)
-//   red.classList.add('active');
-// })
-// const clickOnBtn4 = function() {
-//     red.addEventListener('click', function (event) {
-//         console.log('Произошло событие', event.type)
-//     })
-//     // red.classList.remove('active');
-//     // yellow.classList.add('active');
-//     // green.classList.remove('active');
-// }
-// .addEventListener('click', function (event) {
-//     console.log('Произошло событие', event.type)
-// })
-
 let i = 0;
+function redYellow() {
+    $('.light1').toggleClass('active');
+    $('.light2').toggleClass('active');
+}
+function    greenYellow() {
+    $('.light3').toggleClass('active');
+    $('.light2').toggleClass('active');
+}
+
 $('.exercise4__button').click(function() {
     if (i == 0) {
-        $('.light1').toggleClass('active');
-        $('.light2').toggleClass('active');
-        i++ ;
+        redYellow();
+        i++;
     } else  {
         if (i == 1) {
-            $('.light3').toggleClass('active');
-            $('.light2').toggleClass('active');
-            i++ ;
+            greenYellow();
+            i++;
         } else {
             if (i == 2) {
-                $('.light3').toggleClass('active');
-                $('.light2').toggleClass('active');
-                i++ ;
+                greenYellow();
+                i++;
             } else {
                 if (i == 3) {
-                    $('.light1').toggleClass('active');
-                    $('.light2').toggleClass('active');
+                    redYellow();
                     i = 0;
                 }
             }
@@ -102,41 +91,27 @@ $('.exercise4__button').click(function() {
     
 });
 
+
+
 // Задание 5
 // Создать html-страницу со списком книг.
 // При щелчке на книгу, цветфона долженменяться на оранжевый.
 // при щелчке на другую книгу, предыдущей-необходимо возвращать
 // прежний цвет.
 
+function activate() {
+    $('.exercise5__list-item').removeClass('activeColor');
+    $(this).toggleClass('activeColor')};
 
-$('.item1').click(function() {
-    $('.exercise5__list-item').removeClass('activeColor');
-    $('.item1').toggleClass('activeColor');
-})
-$('.item2').click(function() {
-    $('.exercise5__list-item').removeClass('activeColor');
-    $('.item2').toggleClass('activeColor');
-})
-$('.item3').click(function() {
-    $('.exercise5__list-item').removeClass('activeColor');
-    $('.item3').toggleClass('activeColor');
-})
-$('.item4').click(function() {
-    $('.exercise5__list-item').removeClass('activeColor');
-    $('.item4').toggleClass('activeColor');
-})
-$('.item5').click(function() {
-    $('.exercise5__list-item').removeClass('activeColor');
-    $('.item5').toggleClass('activeColor');
-})
-$('.item6').click(function() {
-    $('.exercise5__list-item').removeClass('activeColor');
-    $('.item6').toggleClass('activeColor');
-})
-$('.item7').click(function() {
-    $('.exercise5__list-item').removeClass('activeColor');
-    $('.item7').toggleClass('activeColor');
-})
+$('.item1').click(activate);
+$('.item2').click(activate);
+$('.item3').click(activate);
+$('.item4').click(activate);
+$('.item5').click(activate);
+$('.item6').click(activate);
+$('.item7').click(activate);
+
+
 
 // Задание 6
 // Создать html-страницу с несколькими кнопками.
@@ -153,3 +128,33 @@ if (yPosition < 60) {
 }
 }
 
+
+
+// Задание 7
+// Создать html-страницу с деревом вложенных директорий.
+// При клике на элемент списка, он должен сворачиваться или
+// разворачиваться. При наведении на элемент, шрифт должен 
+// становится жирным (с помощью CSS).
+
+$('.exercise7__list-title').click(function() {
+    $('.exercise7__list').toggleClass('activeFolder');
+});
+$('.subtitle1').click(function() {
+    $('.sublist1').toggleClass('activeSubFolder');
+});
+$('.subtitle2').click(function() {
+    $('.sublist2').toggleClass('activeSubFolder');
+});
+
+
+
+// Задание 8
+// Создать html-страницу с блоком текста в рамочке.
+// Реализовать возможность изменять размер блока, если зажать
+// мышку в правом нижнем углу и тянуть ее дальше.
+
+$( ".exercise8" ).mousemove(function( event ) { 
+    let w = (event.pageX < 1024) ? event.pageX :700;
+    let h = (event.pageY < 300) ? event.pageY :200;
+    $(this).css({"width":w,"height":h});    
+});

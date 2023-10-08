@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="dist/style.css">
 </head>
 <body>
+    <div class="title">Задание 1
+        Создать html-страницу для ввода имени пользователя.
+        Необходимо проверять каждый символ, который вводит поль-
+        зователь. Если он ввел цифру, то не отображать ее в input.</div>
     <div class="exercise1">
         <div class="exercise1_title">
             Enter your name (name can't contain digits)
@@ -14,6 +18,12 @@
         <input type="text" class="input" onkeypress="noDigits(event)">
     </div>
 
+    <div class="title">Задание 2
+        Создать html-страницу с кнопкой Открыть и модальным
+        окном. На модальном окне должен быть текст и кнопка Закрыть.
+        Изначально модальное окно не отображается. При клике на
+        кнопку Открыть появляется модальное окно, на кнопку –
+        исчезает.</div>
     <div class="exercise2">
         <button class="exercise2__button" onclick="clickOnBtn()">Open modal</button>
         <div class="exercise2__modal" id="modal">
@@ -22,16 +32,27 @@
         </div>
     </div>
 
+    <div class="title">Задание 3
+        Создать html-страницу с футбольным полем, которое занимает всю ширину и высоту экрана, и мячом размером 100 на 100
+        пикселей.
+        Сделать так, чтобы при клике мышкой по полю, мяч плавно
+        перемещался на место клика. Учтите: необходимо, чтобы центр
+        мяча останавливался именно там,где был совершен клик мышкой.
+        Также предусмотрите, чтобы мяч не выходил за границы поля.</div>
     <div class="exercise3">
         <img src="images/footfield.jpg" alt="">
         <div class="exercise3__container">
             <div class="ball" id="ball">
-                <img src="images/ball.png" alt="">
+                <img src="images/ballsmall.png" alt="">
             </div>
         </div>
         
     </div>
     
+    <div class="title">Задание 4
+        Создать html-страницу со светофором и кнопкой, которая
+        переключает светофор на следующий цвет.
+    </div>
     <div class="exercise4">
         <div class="exercise4__trafficLighter">
             <div class="exercise4__trafficLighter-light">
@@ -47,6 +68,11 @@
         <button class="exercise4__button">NEXT</button>
     </div>
 
+    <div class="title">Задание 5
+        Создать html-страницу со списком книг.
+        При щелчке на книгу, цветфона долженменяться на оранжевый.
+        при щелчке на другую книгу, предыдущей-необходимо возвращать
+        прежний цвет.</div>
     <div class="exercise5">
         <ol class="exercise5__list">
             <li class="exercise5__list-item item1">
@@ -73,6 +99,13 @@
         </ol>
     </div>
 
+    <div class="title">
+        Задание 6
+Создать html-страницу с несколькими кнопками.
+При наведении на кнопку, должна появляться подсказка с текс-
+том. По умолчанию – подсказка появляется сверху от кнопки. Но
+если она не помещается сверху от кнопки, тогда отображается снизу.
+    </div>
     <div class="exercise6">
         <div class="exercise6__block">
             <div class="btn_1">
@@ -98,6 +131,48 @@
                 <button class="btn64">Button 4</button>
             </div>
         </div>
+    </div>
+
+    <div class="title">
+        Задание 7
+Создать html-страницу с деревом вложенных директорий.
+При клике на элемент списка, он должен сворачиваться или
+разворачиваться. При наведении на элемент, шрифт должен 
+становится жирным (с помощью CSS).
+    </div>
+    <div class="exercise7">
+        <div class="exercise7__list-title">This PC</div>
+        <ul class="exercise7__list">
+            <li class="exercise7__list-item">
+                <div class="exercise7__list-item__title subtitle1">Local Disk (C:)</div>
+                <ul class="exercise7__list-item__list sublist1">
+                    <li class="exercise7__list-item__list-folders">Program files</li>
+                    <li class="exercise7__list-item__list-folders">User</li>
+                    <li class="exercise7__list-item__list-folders">Windows</li>
+                </ul>
+            </li>
+            <li class="exercise7__list-item">
+                <div class="exercise7__list-item__title subtitle2">Local Disk (D:)</div>
+                <ul class="exercise7__list-item__list sublist2">
+                    <li class="exercise7__list-item__list-folders">New folder 1</li>
+                    <li class="exercise7__list-item__list-folders">New folder 2</li>
+                    <li class="exercise7__list-item__list-folders">New folder 3</li>
+                </ul>
+            </li>
+            <li class="exercise7__list-item">
+                <div class="exercise7__list-item__title">Local Disk (E:)</div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="title">
+        Задание 8
+Создать html-страницу с блоком текста в рамочке.
+Реализовать возможность изменять размер блока, если зажать
+мышку в правом нижнем углу и тянуть ее дальше.
+    </div>
+    <div class="exercise8">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos officiis facilis repellendus.
     </div>
 
 
