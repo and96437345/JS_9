@@ -152,9 +152,3 @@ $('.subtitle2').click(function() {
 // Создать html-страницу с блоком текста в рамочке.
 // Реализовать возможность изменять размер блока, если зажать
 // мышку в правом нижнем углу и тянуть ее дальше.
-
-$( ".exercise8" ).mousemove(function( event ) { 
-    let w = (event.pageX < 1024) ? event.pageX :700;
-    let h = (event.pageY < 300) ? event.pageY :200;
-    $(this).css({"width":w,"height":h});    
-});

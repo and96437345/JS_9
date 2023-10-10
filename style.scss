@@ -229,11 +229,21 @@
 }
 
 .exercise8 {
-    border: 1px solid;
-    font-size: 25px;
+    &__text {
+        font-size: 25px;
+        padding: 20px;
+        border: rgb(212, 212, 212) solid;
+        &::-webkit-resizer{
+            border-width: 0px 0px 20px 20px;
+            border-color: transparent transparent rgb(133, 133, 133) transparent;
+            border-style: solid;
+            width: 0;
+            height: 0;
+            }
+    }
     margin-bottom: 150px;
     margin-left: 50px;
-    padding: 20px;
+    
 }
 
 .title {
